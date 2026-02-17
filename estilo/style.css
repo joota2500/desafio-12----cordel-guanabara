@@ -59,6 +59,9 @@ section{
     font-family: var(--font3);
     font-size: ;
 }
+section>p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
     color: black;
@@ -66,12 +69,25 @@ section.normal{
 section.imagem{
     background-color: black;
     color: white;
-
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.493);    
+    background-size: cover;/*serve para fazer a imagem de fundo cobrir todo o elemento, ajustando automaticamente a largura e altura para preencher o espaço disponível sem distorcer a proporção.*/
+    background-attachment: fixed; 
 }
 section.imagem >p{
     background-color: rgba(58, 54, 54, 0.356);
     display: inline-block; /* ele trasforma ums caixa para se adaptar ao conteudo*/
     padding: 5px;
+    box-shadow: 1px 2px 5px black;
+    
+}
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    /*tirei o cover das duas id e coloquei apenas na imagem geral*/
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    
 }
 footer{
     background-color: black;
